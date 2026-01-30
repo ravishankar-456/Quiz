@@ -1,0 +1,74 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Quiz Engine Styles */
+.quiz-container {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  backdrop-filter: blur(5px);
+}
+
+/* Loading Spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Gradient Animations */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Smooth Transitions */
+button {
+  transition: all 0.3s ease;
+}
+
+input,
+select,
+textarea {
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden-tablet {
+    display: none;
+  }
+}
